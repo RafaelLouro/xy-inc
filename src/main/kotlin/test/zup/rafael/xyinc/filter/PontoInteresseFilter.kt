@@ -3,11 +3,11 @@ package test.zup.rafael.xyinc.filter
 import javax.validation.constraints.PositiveOrZero
 
 class PontoInteresseFilter(
-        @PositiveOrZero(message = "Coordenada X não pode ser negativa!")
+        @field:PositiveOrZero(message = "Coordenada X não pode ser negativa!")
         val coordX: Int,
-        @PositiveOrZero(message = "Coordenada Y não pode ser negativa!")
+        @field:PositiveOrZero(message = "Coordenada Y não pode ser negativa!")
         val coordY: Int,
-        @PositiveOrZero(message = "A distância não pode ser negativa!")
+        @field:PositiveOrZero(message = "A distância não pode ser negativa!")
         val distancia: Int
 ) {
 
